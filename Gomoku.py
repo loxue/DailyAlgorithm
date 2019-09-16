@@ -45,7 +45,7 @@ def checkwin():
                 annance_win(2)
 
 def annance_win(a):
-    if a==1:
+    if a == 1:
         tkinter.messagebox.askyesno('游戏结束','黑棋获胜,是否再来一盘？')
         newgame()
     if a == 2:
