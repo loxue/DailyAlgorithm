@@ -1,4 +1,8 @@
 # -*- coding:utf-8 -*-
+'''
+    五子棋程序
+'''
+
 import tkinter,math,copy
 from tkinter import messagebox
 
