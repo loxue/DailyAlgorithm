@@ -1,6 +1,7 @@
-/**
- * Valid Sudoku（有效的数独）
- * 题目：
+# -*- coding:utf-8 -*-
+'''
+   Valid Sudoku（有效的数独）
+   题目：
     判断一个 9x9 的数独是否有效。只需要 根据以下规则 ，验证已经填入的数字是否有效即可。
 
     数字 1-9 在每一行只能出现一次。
@@ -46,8 +47,8 @@
     只需要根据以上规则，验证已经填入的数字是否有效即可。
     给定数独序列只包含数字 1-9 和字符 '.' 。
     给定数独永远是 9x9 形式的。
- *
- */
+
+ '''
 
 
 class Solution(object):
@@ -57,12 +58,12 @@ class Solution(object):
         :rtype:bool
         '''
 
-        // 初始化
+        # 初始化
         cacheCol = [[0] * 9 for _ in xrange(0,10)]
         cacheRow = [[0] * 9 for _ in xrange(0,10)]
         cacheBox = [[0] * 9 for _ in xrange(0,10)]
 
-        // 循环遍历
+        # 循环遍历
         for i in xrange(0, 9):
             for j in xrange(0, 9):
 
@@ -79,4 +80,4 @@ class Solution(object):
                 cacheRow[j][num] = 1
                 cacheRow[ib][num] = 1
 
-        retrun True
+        return True
