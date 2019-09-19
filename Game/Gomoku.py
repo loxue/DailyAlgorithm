@@ -6,6 +6,7 @@
 import tkinter,math,copy
 from tkinter import messagebox
 
+# init root
 root = tkinter.Tk()
 global board
 board = [[0 for i in range(19)] for i in range(19)]
