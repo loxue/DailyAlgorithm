@@ -18,7 +18,6 @@
 
 '''
 
-
 class Solution(object):
     def _lengthOfLongestSubstring(self, s):
         """
