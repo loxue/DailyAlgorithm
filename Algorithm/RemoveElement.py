@@ -35,7 +35,7 @@
 '''
 
 class Solution(object):
-    def removeElement(self, nums, var):
+    def removeElement(self, nums, val):
         '''
         :type nums:List[int]
         :type var:int
@@ -43,7 +43,7 @@ class Solution(object):
         '''
         slow = -1
         for i in xrange(0, len(nums)):
-            if nums[i] != var:
+            if nums[i] != val:
                 slow += 1
                 nums[slow] = nums[i]
         return slow + 1
