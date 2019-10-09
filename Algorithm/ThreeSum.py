@@ -16,10 +16,10 @@
 
 class Solution(object):
     def threeSum(self, nums):
-        “””
+        '''
         :type nums: List[int]
         :rtype: List[List[int]]
-        “””
+        '''
         res = []
         nums.sort()
         for i in xrange(0, len(nums)):
