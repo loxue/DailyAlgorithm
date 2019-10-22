@@ -47,10 +47,15 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: void (Do not return anything, modify matrix in-place instead.)
         '''
+        # 判断为空值的话直接return
         if len(matrix) == 0:
             return
+
+        # 获取外层列表的长度和里层列表的长度
         h = len(matrix)
         w = len(matrix[0])
+
+        # 外层遍历
         for i in xrange(0, h):
             for j in xrange(0, w/2):
                 matrix[i][j], matrix[i][w-j-1] = matrix[i][w-j-1], matrix[i][j]
