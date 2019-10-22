@@ -56,5 +56,5 @@ class Solution(object):
                 matrix[i][j], matrix[i][w-j-1] = matrix[i][w-j-1], matrix[i][j]
 
         for i in xrange(0, h):
-            for j in xrange(0, w-1-j):
+            for j in xrange(0, w-1-i):
                 matrix[i][j], matrix[w-1-j][h-1-i] = matrix[w-1-j][h-1-i], matrix[i][j]
